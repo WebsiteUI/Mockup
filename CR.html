@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+    <link rel="stylesheet" href="page2.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="header-content">
+            <img src="LogoINTT.png" alt="Logo" class="logo-img">
+            <span class="logo-text">iNTT</span>
+        </div>
+        <div class="header-right">
+            <img src="UserLogin.png" alt="User Login" class="user-logo">
+        </div>
+    </header>
+
+    <!-- Main Layout -->
+    <div class="main-layout">
+        <!-- Sidebar -->
+        <nav>
+            <ul>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li>
+                    <a href="module.html">Module</a>
+                    <ul>
+                        <li><a href="index.html">NTT</a></li>
+                        <li><a href="cr.html" class="selected">CR</a></li>
+                        <li><a href="ar.html">AR</a></li>
+                        <li><a href="pt.html">PT</a></li>
+                    </ul>
+                </li>
+                <li><a href="report.html">Report</a></li>
+                <li><a href="settings.html">Settings</a></li>
+            </ul>
+        </nav>
+
+        <!-- Panel -->
+				<div class="panel">
+					<img src="HomeIcon.png" alt="Home Icon" class="panel-icon">
+					<span class="breadcrumb"> > Module > CR</span>
+
+					<!-- Nested Panel -->
+					<div class="nested-panel">
+						<input type="text" class="search-field" placeholder="Search here...">
+						<button class="search-button">Search</button>
+					</div>
+
+					<!-- New Panel Below Search Panel -->
+					<div class="fields-panel">
+						<div class="panel-header">
+							Network Ticket Information
+						</div>
+						<div class="panel-content">
+							<form>
+								<div class="form-row">
+									<!-- Left Side -->
+									<div class="form-column">
+										<div class="form-group">
+											<label for="cusName">Customer Name:</label>
+											<input type="text" id="cusName" name="cusName" placeholder="Enter Customer Name">
+										</div>
+										
+										<div class="form-group">
+											<label for="contact">Contact Number:</label>
+											<input type="text" id="contact" name="contact" placeholder="Enter Contact Number">
+										</div>
+										
+										<div class="form-group">
+											<label for="email">Email:</label>
+											<input type="text" id="email" name="email" placeholder="Enter Email">
+										</div>
+										
+										<div class="form-group">
+											<label for="status">Location :</label>
+										</div>
+										
+										<div class="form-group">
+											<label for="latitude">Latitude:</label>
+											<input type="text" id="latitude" name="latitude" placeholder="Enter Latitude">
+										</div>
+										
+										<div class="form-group">
+											<label for="longitude">Longitude:</label>
+											<input type="text" id="longitude" name="longitude" placeholder="Enter Longitude">
+										</div>
+										
+										<div class="form-group">
+											<label for="address">Address:</label>
+											<textarea id="address" name="address" placeholder="Enter Address"></textarea>
+										</div>
+										
+										<div class="form-group">
+											<label for="file-upload">Upload Files:</label>
+											<input type="file" id="file-upload" name="files[]" multiple>
+										</div>
+
+										<div class="form-group">
+											<label for="uploaded-files">Uploaded Files:</label>
+											<ul id="uploaded-files"></ul>
+										</div>
+									</div>
+
+									<!-- Right Side -->
+									<div class="form-column">
+										<div class="form-group">
+											<label for="building">Building ID :</label>
+											<select id="building" name="building">
+												<option value="" disabled selected>Select Building</option>
+												<option value="building1">Building 1</option>
+												<option value="building2">Building 2</option>
+												<option value="building3">Building 3</option>
+											</select>
+										</div>
+										
+										<div class="form-group">
+											<label for="zone">Zone :</label>
+											<select id="zone" name="zone">
+												<option value="" disabled selected>Select Zone</option>
+												<option value="zone1">Zone 1</option>
+												<option value="zone2">Zone 2</option>
+												<option value="zone3">Zone 3</option>
+											</select>
+										</div>
+										
+										<div class="form-group">
+											<label for="wilayah">Wilayah :</label>
+											<select id="wilayah" name="wilayah">
+												<option value="" disabled selected>Select Wilayah</option>
+												<option value="wilayah1">Wilayah 1</option>
+												<option value="wilayah2">Wilayah 2</option>
+												<option value="wilayah3">Wilayah 3</option>
+											</select>
+										</div>
+										
+										<div class="form-group">
+											<label for=" "> </label>
+										</div>
+										
+										<div class="form-group">
+										</div>
+										
+										<div class="form-group">
+											<label for="symptom">Symptom :</label>
+											<select id="symptom" name="symptom">
+												<option value="" disabled selected>Select Symptom</option>
+												<option value="symptom1">Symptom 1</option>
+												<option value="symptom2">Symptom 2</option>
+												<option value="symptom3">Symptom 3</option>
+											</select>
+										</div>
+										
+										<div class="form-group">
+											<label for="diagnosis">Diagnosis Code :</label>
+											<select id="diagnosis" name="diagnosis">
+												<option value="" disabled selected>Select Diagnosis Code</option>
+												<option value="diagnosis1">Diagnosis Code 1</option>
+												<option value="diagnosis2">Diagnosis Code 2</option>
+												<option value="diagnosis3">Diagnosis Code 3</option>
+											</select>
+										</div>
+										
+										<div class="form-group">
+											<label for=" "> </label>
+										</div>
+										
+										<div class="form-group">
+										</div>
+										
+										<div class="form-group">
+											<label for="urgency">Reason of Urgency: :</label>
+											<select id="urgency" name="urgency">
+												<option value="" disabled selected>Select Reason of Urgency</option>
+												<option value="urgency1">Reason of Urgency 1</option>
+												<option value="urgency2">Reason of Urgency 2</option>
+												<option value="urgency3">Reason of Urgency 3</option>
+											</select>
+										</div>
+										
+										<div class="form-group">
+											<label for="faultySeverity">Severity :</label>
+											<select id="faultySeverity" name="faultySeverity">
+												<option value="" disabled selected>Select Severity</option>
+												<option value="minor">Minor</option>
+												<option value="major">Major</option>
+											</select>
+										</div>
+										
+										<div class="form-group">
+											<label for="ettr">ETTR:</label>
+											<input type="datetime-local" id="ettr" name="ettr">
+										</div>
+										
+										<div class="form-group">
+											<label for="additional">Additional Info:</label>
+											<textarea id="additional" name="additional" placeholder="Enter Additional Info"></textarea>
+										</div>
+										
+										<div class="submit-button-container">
+											<button type="submit" class="submit-button">Submit</button>
+										</div>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+    </div>
+	
+<script>
+    const fileInput = document.getElementById('file-upload');
+    const uploadedFilesList = document.getElementById('uploaded-files');
+
+    fileInput.addEventListener('change', function() {
+        uploadedFilesList.innerHTML = ''; // Clear the list first
+        const files = fileInput.files;
+        
+        for (let i = 0; i < files.length; i++) {
+            const listItem = document.createElement('li');
+            listItem.textContent = files[i].name;
+            uploadedFilesList.appendChild(listItem);
+        }
+    });
+</script>
+</body>
+</html>

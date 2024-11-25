@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+    <link rel="stylesheet" href="page3.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="header-content">
+            <img src="LogoINTT.png" alt="Logo" class="logo-img">
+            <span class="logo-text">iNTT</span>
+        </div>
+        <div class="header-right">
+            <img src="UserLogin.png" alt="User Login" class="user-logo">
+        </div>
+    </header>
+
+    <!-- Main Layout -->
+    <div class="main-layout">
+        <!-- Sidebar -->
+        <nav>
+            <ul>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li>
+                    <a href="module.html">Module</a>
+                    <ul>
+                        <li><a href="index.html">NTT</a></li>
+                        <li><a href="cr.html">CR</a></li>
+                        <li><a href="ar.html" class="selected">AR</a></li>
+                        <li><a href="pt.html">PT</a></li>
+                    </ul>
+                </li>
+                <li><a href="report.html">Report</a></li>
+                <li><a href="settings.html">Settings</a></li>
+            </ul>
+        </nav>
+
+        <!-- Panel -->
+				<div class="panel">
+					<img src="HomeIcon.png" alt="Home Icon" class="panel-icon">
+					<span class="breadcrumb"> > Module > AR</span>
+
+					<!-- Nested Panel -->
+					<div class="nested-panel">
+						<input type="text" class="search-field" placeholder="Search here...">
+						<button class="search-button">Search</button>
+					</div>
+
+					<!-- New Panel Below Search Panel -->
+					<div class="fields-panel">
+						
+					</div>
+				</div>
+			</div>
+		</div>
+    </div>
+
+</body>
+</html>

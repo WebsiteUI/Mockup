@@ -1,0 +1,310 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and General Layout */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* Header Styling */
+header {
+    background-color: #051650;
+    color: white;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: bold;
+    font-size: 40px;
+    height: 10%;
+}
+
+/* Header Content */
+.header-content {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+}
+
+/* Logo Image Styling */
+.logo-img{
+    height: 50px;
+    width: auto;
+}
+
+.user-logo{
+	height: 35px;
+	width: auto;
+}
+
+.logo-text {
+    font-size: 40px;
+    color: white;
+}
+
+/* Main Layout Styling */
+.main-layout {
+    display: flex;
+    flex: 1; /* Remaining height of the viewport */
+    width: 100%;
+}
+
+/* Sidebar Styling */
+nav {
+    width: 12%;
+    background-color: #00072D;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+/* Styling for Menu */
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    padding: 0; /* Remove padding from the list item to avoid gaps */
+    margin-bottom: 10px;
+}
+
+nav ul li ul {
+    margin-left: 20px;
+    padding-left: 0; /* Ensure consistent alignment */
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    display: block; /* Make the link block-level */
+    padding: 10px 15px; /* Add consistent padding inside the link */
+    width: 100%; /* Ensure the link spans the full width of the sidebar */
+    box-sizing: border-box; /* Include padding in the width calculation */
+}
+
+nav a.selected {
+    background-color: #1A43BF;
+    color: white;
+    font-weight: bold;
+}
+
+
+/* Panel Styling */
+.panel {
+    flex-grow: 1; /* Take the remaining space beside the sidebar */
+    padding: 20px;
+    background-color: #F6F6F6;
+    position: relative; /* To position the icon inside the panel */
+}
+
+/* Panel Header Styling */
+.panel-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Ensures proper spacing */
+    padding: 10px 15px;
+    background-color: #F9F9F9;
+    border-bottom: 1px solid #ccc;
+}
+
+/* Home Icon Styling */
+.panel-icon {
+    height: 30px;
+    width: auto; /* Maintain aspect ratio */
+    margin-right: 3px; /* Add spacing between icon and breadcrumb */
+}
+
+/* Breadcrumb Styling */
+.breadcrumb {
+    font-size: 18px; /* Adjust breadcrumb text size */
+    font-weight: bold; /* Normal weight for breadcrumb */
+    color: #333; /* Neutral dark color for text */
+    flex-grow: 1; /* Ensure breadcrumb takes remaining space */
+    position: relative; /* Allows vertical adjustment */
+    top: -9px; /* Adjusts breadcrumb text slightly upwards */
+}
+
+/* Nested Panel Styling */
+.nested-panel {
+    margin-top: 20px; /* Add space between breadcrumb and nested panel */
+    background-color: #F6F6F6; /* White background for nested panel */
+    padding: 10px 15px; /* Padding inside the panel */
+    border: 1px solid #ccc; /* Light border for nested panel */
+    border-radius: 5px; /* Rounded corners for a polished look */
+    display: flex; /* Align items horizontally */
+    gap: 10px; /* Space between input field and button */
+    align-items: center; /* Center align items vertically */
+}
+
+/* Search Field Styling */
+.search-field {
+    flex-grow: 1; /* Take up available space */
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 4px; /* Rounded corners */
+}
+
+/* Search Button Styling */
+.search-button {
+    padding: 8px 15px; /* Button size */
+    background-color: #1A43BF; /* Button background */
+    color: white; /* Button text color */
+    border: none; /* Remove border */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Button Hover Effect */
+.search-button:hover {
+    background-color: #163A92; /* Darker blue on hover */
+}
+
+/* New Fields Panel Styling */
+.fields-panel {
+    margin-top: 20px; /* Add space between panels */
+    padding: 20px;
+    background-color: #F6F6F6;
+    border: 1px solid #ddd;
+	border-radius: 5px;
+}
+
+/* Field Styling */
+.fields-panel .field {
+    margin-bottom: 15px; /* Space between fields */
+}
+
+.fields-panel label {
+    font-size: 16px;
+    color: #333;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.fields-panel input[type="text"] {
+    width: 100%;
+    padding: 5px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.panel {
+    width: 97%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px; /* Space between the panels */
+}
+
+.panel-header {
+    background-color: #00008B;
+    color: #fff;
+    padding: 10px;
+    font-size: 18px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.panel-content {
+    padding: 20px;
+    font-size: 14px;
+    color: #333;
+	background-color: #FFFFFF;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.form-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+label {
+    flex: 1;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="datetime-local"],
+select {
+    flex: 2;
+    padding: 5px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.checkbox-group {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+textarea {
+    width: 67%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    height: 100px;
+}
+
+/* Container for the Submit Button */
+.submit-button-container {
+    display: flex;
+    justify-content: flex-end; /* Align to the right */
+    margin-top: 20px; /* Space from the above fields */
+}
+
+/* Submit Button Styling */
+.submit-button {
+    padding: 10px 20px;
+    background-color: #1A43BF; /* Button background color */
+    color: white; /* Button text color */
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Submit Button Hover Effect */
+.submit-button:hover {
+    background-color: #163A92; /* Darker blue on hover */
+}
